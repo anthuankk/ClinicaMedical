@@ -1,0 +1,195 @@
+/* 🌈 Fondo amigable */
+body {
+    background-image: url('./fondo.jpg'); /* Reemplaza con tu imagen */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    font-family: 'Comic Sans MS', 'Segoe UI', sans-serif;
+    color: #2c2f36;
+    padding: 2rem 0;
+    animation: fadeIn 1s ease-in;
+  }
+  
+  
+  /* 🎬 Animación inicial */
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  /* 🏥 Logo */
+  .logo {
+    max-width: 500px;
+    display: block;
+    margin: 0 auto 1rem;
+  }
+  
+  /* 🎉 Sección bienvenida */
+  .bienvenida {
+    text-align: center;
+    padding: 2rem;
+    background-color: #001b3d98;
+    border-radius: 12px;
+    box-shadow: 0 0 10px rgb(0, 0, 0);
+  }
+  
+  /* 📋 Formulario y secciones */
+  .formulario-datos,
+  .seccion-contenido,
+  .seccion-juego {
+    background: #032d53b2;
+    padding: 2rem;
+    border-radius: 15px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.753);
+    margin-top: 2rem;
+  }
+  
+  /* 🧠 Títulos */
+  h2 {
+    color: #f57c00;
+    margin-top: 1.5rem;
+  }
+  
+  h3 {
+    margin-top: 1rem;
+    color: #0277bd;
+  }
+  
+  /* 📦 Tarjetas de derechos y deberes */
+  .grid-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+    gap: 1rem;
+    margin-top: 1rem;
+    justify-content: center;
+  }
+  
+  .card {
+    background: #fff3e0;
+    border: 2px solid #ffcc80;
+    border-radius: 12px;
+    padding: 1rem;
+    font-size: 1rem;
+    transition: transform 0.2s ease, background 0.3s;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    min-height: 100px;
+    font-weight: bold;
+    line-height: 1.2;
+  }
+  
+  .card span {
+    font-size: 1.5rem;
+    margin-right: 0.5rem;
+  }
+  
+  .card:hover {
+    transform: scale(1.05);
+    background: #ffe0b2;
+  }
+  
+  .deberes .card {
+    background: #e1f5fe;
+    border: 2px solid #81d4fa;
+  }
+  
+  /* 🎮 Juego de Memoria */
+  .juego {
+    background: #01362b;
+    border-radius: 12px;
+    padding: 1rem;
+    margin-top: 1rem;
+    text-align: center;
+  }
+  
+  .tablero {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1rem;
+    margin-top: 1rem;
+    justify-items: center;
+  }
+  
+  .tablero .card {
+    width: 100px;
+    height: 100px;
+    font-size: 0.8rem;
+    overflow: hidden;
+    border: 2px solid #ffcc80;
+    padding: 0.3rem;
+    border-radius: 12px;
+    background: #fff8dc;
+    cursor: pointer;
+  }
+  
+  .card.descubierta {
+    background-color: #aed581;
+    color: black;
+  }
+  
+  /* 🏆 Historial de resultados */
+  #historialResultados {
+    margin-top: 2rem;
+  }
+  
+  #historialResultados table {
+    width: 100%;
+    border-collapse: collapse;
+  }
+  
+  #historialResultados th,
+  #historialResultados td {
+    border: 1px solid #ccc;
+    padding: 0.5rem;
+    text-align: center;
+  }
+  
+  #historialResultados tr:nth-child(even) {
+    background-color: #f9f9f9;
+  }
+  
+  /* 🧷 Botones */
+  button {
+    font-size: 1.2rem;
+    transition: background 0.3s ease;
+  }
+  
+  button:hover {
+    background-color: #ffca28;
+    cursor: pointer;
+  }
+  
+  /* 📱 Responsive */
+  @media (max-width: 768px) {
+    .grid-list {
+      grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+    }
+  
+    .tablero {
+      grid-template-columns: repeat(3, 1fr);
+    }
+  
+    .card {
+      font-size: 0.95rem;
+    }
+  
+    .tablero .card {
+      width: 90px;
+      height: 90px;
+    }
+  
+    button {
+      width: 100%;
+      font-size: 1rem;
+    }
+  }
+  

@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Medical Duarte - Derechos y Deberes</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@picocss/pico@1/css/pico.min.css" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <nav class="container-fluid">
+    <ul>
+      <li><strong>🏥 Medical Duarte</strong></li>
+    </ul>
+    <ul>
+      <li><a href="#" onclick="irAInicio()">Inicio</a></li>
+      <li><a href="#" onclick="mostrarFormulario()">Formulario</a></li>
+      <li><a href="#" role="button" onclick="cerrarSesion()">Cerrar sesión</a></li>
+    </ul>
+  </nav>
+
+  <main class="container">
+    <section class="bienvenida">
+      <img src="./imagotipo_cmd@4x.png" alt="Logo de Medical Duarte" class="logo" />
+      <h1>¡Hola! 👋 Bienvenido a Medical Duarte</h1>
+      <p>Aprende sobre tus derechos y deberes como paciente de forma divertida.</p>
+      <button onclick="mostrarFormulario()">💡 Comenzar</button>
+    </section>
+
+    <section id="formulario" class="formulario-datos" style="display:none">
+      <h2>👤 Ingresa tus datos</h2>
+      <form id="datosForm">
+        <input type="text" id="nombre" name="nombre" placeholder="Nombre completo" required />
+        <input type="number" id="edad" name="edad" placeholder="Edad" required />
+        <select id="tipoDocumento" name="tipoDocumento" required>
+          <option value="">Tipo de documento</option>
+          <option value="CC">Cédula de ciudadanía</option>
+          <option value="TI">Tarjeta de identidad</option>
+          <option value="CE">Cédula de extranjería</option>
+        </select>
+        <input type="text" id="numeroDocumento" name="numeroDocumento" placeholder="Número de documento" required />
+        <input type="date" id="fechaNacimiento" name="fechaNacimiento" required />
+        <button type="submit">👉 Continuar</button>
+      </form>
+    </section>
+
+    <section id="contenido" class="seccion-contenido" style="display:none">
+      <h2>🎯 Tus Derechos</h2>
+      <div class="grid-list">
+        <div class="card"><span>📄</span>Conocer todos los trámites administrativos</div>
+        <div class="card"><span>💬</span>Ser informado de todo lo relacionado con su atención</div>
+        <div class="card"><span>🤝</span>Recibir atención que respete su dignidad</div>
+        <div class="card"><span>🔒</span>Privacidad y confidencialidad de la información</div>
+        <div class="card"><span>😊</span>Recibir un trato amable y humano</div>
+        <div class="card"><span>📚</span>Información sobre enfermedad y tratamientos</div>
+        <div class="card"><span>👨‍⚕️</span>Ser atendido por personal capacitado</div>
+        <div class="card"><span>💊</span>Recibir medicamentos y su explicación</div>
+        <div class="card"><span>✍️</span>Aceptar o rechazar procedimientos</div>
+        <div class="card"><span>🩺</span>Recibir atención adecuada a sus necesidades</div>
+      </div>
+
+      <h2>🧠 Tus Deberes</h2>
+      <div class="grid-list deberes">
+        <div class="card"><span>🧼</span>Mantener el orden y la limpieza</div>
+        <div class="card"><span>📏</span>Cumplir las normas con buena fe</div>
+        <div class="card"><span>🗣️</span>Explicar bien tu estado de salud</div>
+        <div class="card"><span>✅</span>Seguir recomendaciones médicas</div>
+        <div class="card"><span>🚫</span>No usar información falsa</div>
+        <div class="card"><span>📋</span>Dar la información necesaria</div>
+        <div class="card"><span>🚨</span>Reportar actos que afecten a la clínica</div>
+        <div class="card"><span>⏰</span>Cumplir citas y horarios</div>
+        <div class="card"><span>👨‍⚕️</span>Respetar al personal de salud</div>
+        <div class="card"><span>🤗</span>Tratar con amabilidad y respeto</div>
+      </div>
+    </section>
+
+    <section id="juego" class="seccion-juego" style="display:none">
+      <h2>🎮 ¡A jugar!</h2>
+      <div id="juegoContenido" class="juego"></div>
+    </section>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>

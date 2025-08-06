@@ -1,0 +1,63 @@
+🏥 Medical Duarte — Educación en Derechos y Deberes
+
+Medical Duarte es una aplicación web interactiva diseñada para enseñar a niños y adultos sus derechos y deberes como pacientes en una clínica, a través de una experiencia educativa y lúdica.
+🧩 Características principales
+
+    ✅ Interfaz amigable para niños y adultos
+
+    ✅ Formulario para registrar nombre, edad y documento
+
+    ✅ Sección visual de derechos y deberes con íconos
+
+    ✅ Juego de memoria para niños
+
+    ✅ Juego de adivinanzas para adultos
+
+    ✅ Almacenamiento local de nombres y puntajes
+
+    ✅ Diseño responsivo (funciona en móvil y PC)
+
+    ✅ Navegación con botones funcionales
+
+📂 Estructura del proyecto
+
+📁 medical-duarte/
+├── index.html          # Página principal
+├── style.css           # Estilos visuales del sitio
+├── script.js           # Lógica del juego, navegación y almacenamiento
+└── logo.png            # (opcional) Logo de la clínica
+
+🚀 Cómo usar
+
+    📥 Descarga o clona este repositorio
+
+    📁 Asegúrate de que los archivos estén en la misma carpeta
+
+    🖥️ Abre index.html en tu navegador favorito
+
+    ✅ ¡Comienza a usar la app!
+
+🎮 Juegos incluidos
+Edad	Juego	Descripción
+Niños	🧠 Memoria	Encuentra pares de cartas con deberes y derechos
+Adultos	🤔 Adivinanza	Responde preguntas sobre los deberes y derechos
+💾 Tecnologías usadas
+
+    HTML5
+
+    CSS3 (con PicoCSS)
+
+    JavaScript puro
+
+    LocalStorage (para historial)
+
+📸 Captura de pantalla (opcional)
+
+    Puedes agregar aquí una imagen de cómo se ve el sitio.
+
+📌 Créditos
+
+Desarrollado por [Tu Nombre Aquí] para uso educativo en la clínica Medical Duarte.
+📃 Licencia
+
+Este proyecto es de uso educativo y puede modificarse libremente.
